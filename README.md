@@ -1,28 +1,29 @@
-# EasytaskRoutingmodule
+# TasksManagement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Overview
 
-## Development server
+This project showcases an advanced Angular application that emphasizes the use of Dependency Injection (DI), routing, and guards. It demonstrates how to manage and change the status of tasks, along with filtering and sorting functionalities. The project also takes advantage of Angular's modern features like signals, maps, and computed functions.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Functionalities
 
-## Code scaffolding
+- **Task Management:** Comprehensive task manipulation, including dynamic status updates.
+- **Dynamic Status Update:** Change the status of tasks with real-time updates and visually reflect these changes using CSS.
+- **Filtering and Sorting:** Filter and sort tasks based on various criteria using query parameters.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Routing:** Implemented routing with dynamic, nested, and clean code splitting into multiple files.
+- **Guards:** Utilized various Angular guards, including `CanDeactivate` and others, to protect routes and ensure smooth navigation.
+- **Dependency Injection:** Efficient injection of services into components and other services for clean and maintainable code.
+- **Service Management:** Centralized logic for status changes, filtering, and sorting.
+- **Angular Signals:** Leveraged Angular's reactive programming features with signals.
+- **Map and Computed Properties:** Utilized maps and computed properties to implement complex business logic.
+- **Query Parameters:** Implemented query parameters for dynamic sorting and filtering of tasks.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Contributing
 
-## Running unit tests
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# EasyTask-MasteringRouting
+This project is licensed under the MIT License.
