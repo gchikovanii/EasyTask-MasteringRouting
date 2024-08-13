@@ -1,19 +1,37 @@
 import { Routes } from "@angular/router";
-import { TasksComponent } from "../tasks.component";
-import { NewTaskComponent } from "../new-task/new-task.component";
+import { resolveUserTasks, TasksComponent } from "../tasks.component";
+import { canLeaveEditPage, NewTaskComponent } from "../new-task/new-task.component";
 
 export const routes : Routes  = [
+    // {
+    //     path: '',
+    //     redirectTo: 'tasks',
+    //     pathMatch: 'prefix'
+    // },
+    // {
+    //     path: 'tasks', 
+    //     component: TasksComponent
+    // },
+    // {
+    //     path: 'tasks/new', 
+    //     component: NewTaskComponent
+    // },
     {
         path: '',
         redirectTo: 'tasks',
-        pathMatch: 'prefix'
-    },
-    {
+        pathMatch: 'full',
+      },
+      {
         path: 'tasks', 
-        component: TasksComponent
-    },
-    {
-        path: 'tasks/new', 
-        component: NewTaskComponent
-    },
+        component: TasksComponent,
+        runGuardsAndResolvers: 'always',
+        resolve: {
+          userTasks: resolveUserTasks,
+        },
+      },
+      {
+        path: 'tasks/new',
+        canDeactivate: [canLeaveEditPage],
+        component: NewTaskComponent,
+      },
 ]
