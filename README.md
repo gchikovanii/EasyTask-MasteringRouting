@@ -13,7 +13,7 @@ This project showcases an advanced Angular application that emphasizes the use o
 ## Features
 
 - **Routing:** Implemented routing with dynamic, nested, and clean code splitting into multiple files.
-- **Guards:** Utilized various Angular guards, including `CanDeactivate` and others, to protect routes and ensure smooth navigation.
+- **Guards:** Utilized various Angular guards, including `CanDeactivate`, `CanMatch` and others, to protect routes and ensure smooth navigation.
 - **Dependency Injection:** Efficient injection of services into components and other services for clean and maintainable code.
 - **Service Management:** Centralized logic for status changes, filtering, and sorting.
 - **Angular Signals:** Leveraged Angular's reactive programming features with signals.
