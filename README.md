@@ -19,6 +19,7 @@ This project showcases an advanced Angular application that emphasizes the use o
 - **Angular Signals:** Leveraged Angular's reactive programming features with signals.
 - **Map and Computed Properties:** Utilized maps and computed properties to implement complex business logic.
 - **Query Parameters:** Implemented query parameters for dynamic sorting and filtering of tasks.
+- **Lazy Loading** for performance boost.
 
 ## Contributing
 
